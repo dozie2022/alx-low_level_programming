@@ -1,1 +1,1 @@
-Use push
+Use printf
