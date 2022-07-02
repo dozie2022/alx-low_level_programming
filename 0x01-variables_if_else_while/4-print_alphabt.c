@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
-*main - Entry point
-*
+* main - program that prints the alphabet in lowercase
+*Print all the letters except q and e
 *Return: Always 0
 */
 int main(void)
@@ -14,6 +14,7 @@ continue;
 else if (alphabet == 'e')
 continue;
 putchar (alphabet);
+}
 putchar ('\n');
 return (0);
 }
