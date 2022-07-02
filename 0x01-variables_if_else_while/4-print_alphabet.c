@@ -1,19 +1,19 @@
 #include <stdio.h>
 /**
-*main - assign random number to variable
-*print the last digit of the number
+*main - Entry point
+*
 *Return: Always 0
 */
 int main(void)
 {
-char ch;
-for (ch = 'a'; ch <= 'z'; ch++)
+char alphabet;
+for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 {
-if (ch != 'q' && ch != 'e')
-{
-putchar(ch);
-}
-}
-putchar(10);
+if (alphabet == 'q')
+continue;
+else if (alphabet == 'e')
+continue;
+putchar (alphabet);
+putchar ('\n');
 return (0);
 }
