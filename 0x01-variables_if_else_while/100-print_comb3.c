@@ -1,26 +1,22 @@
+#include <stdio.h>
 /**
 * main - prints all possible different combinations of two digits
 *
-* Return: always 0
+* Return: Always 0
 */
 int main(void)
 {
-int i;
-int j;
-for (i = 10; i <= 19; i++)
+int digit1, digit2;
+for (digit1 = 0; digit1 < 9; digit1++)
 {
-for (j = 10; j <= 19; j++)
+for (digit2 = digit1 + 1; digit2 < 10; digit2++)
 {
-if ((j % 10) > (i % 10))
-{
-putchar((i % 10) + '0');
-putchar((j % 10) + '0');
-if (i != 18 || j != 19)
-{
+putchar((digit1 % 10) + '0');
+putchar((digit2 % 10) + '0');
+if (digit1 == 8 && digit2 == 9)
+continue;
 putchar(',');
 putchar(' ');
-}
-}
 }
 }
 putchar('\n');
