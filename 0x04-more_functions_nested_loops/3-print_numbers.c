@@ -1,6 +1,6 @@
-#include "main.h"
+include "main.h"
 /**
-* print_numbers - prints numbers
+* print_numbers - print numbers
 */
 void print_numbers(void)
 {
